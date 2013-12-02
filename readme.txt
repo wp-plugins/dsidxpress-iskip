@@ -20,7 +20,7 @@ iSkip for dsIDXpress allows you to scroll through all of a listing's photos by s
 
 It's a simple installation: simply have dsIDXpress running, and then install and activate this plugin.
 
-Uses [iSkip](https://github.com/iantearle/iSkip)
+Uses [iSkip](https://github.com/iantearle/iSkip) for the gallery functionality.
 
 
 == Installation ==
