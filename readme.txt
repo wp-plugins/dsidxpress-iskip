@@ -6,9 +6,8 @@ Requires at least: 3.3
 Tested up to: 3.7.1
 Stable tag: trunk
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-dsIDXpress user: add a great feature: scroll through all of a listing's photos in by simply hovering over the image on the search results page.
+Add a great feature to dsIDXpress: scroll through all of a listing's photos in by simply hovering over the image on the search results page.
 
 == Description ==
 
@@ -20,7 +19,7 @@ iSkip for dsIDXpress allows you to scroll through all of a listing's photos by s
 
 It's a simple installation: simply have dsIDXpress running, and then install and activate this plugin.
 
-Uses [iSkip](https://github.com/iantearle/iSkip) for the gallery functionality.
+Uses [iSkip](https://github.com/iantearle/iSkip) for the gallery functionality. To do more amazing things with dsIDXpress, check out [IDX+](http://www.idxplus.net).
 
 
 == Installation ==
@@ -42,15 +41,15 @@ Yes, this works for both dsIDXpress Lite and dsIDXpress Pro.
 
 == Screenshots ==
 
-1. Before hovering (view video on Description tab)
-2. While hovering  (view video on Description tab)
+1. Before hovering
+2. While hovering
 
 == Changelog ==
 
-= 1.0 =
+= 1.1 =
 * Liftoff!
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.1 =
 Liftoff!
