@@ -2,7 +2,7 @@
 /*
 * Plugin Name: IDX+ iSkip
 * Description: Enable iPhoto-like slideshow when hovering over your dsIDXpress listing photo
-* Version: 1.1
+* Version: 1.2
 * Author: Katz Web Services, Inc.
 * Author URI: http://www.idxplus.net
 * Text Domain: idx-plus
@@ -35,27 +35,31 @@ function idx_plus_iskip_js() {
 jQuery(document).ready(function($) {
 	if(dsidx.dataSets['results']) {
 
-		dsidx.dataSets['results'].forEach(function(result) {
+		dsidx.dataSets['results'].forEach(function(result, index, results) {
 
+			// There are no photos
 			if(result.PhotoCount <= 0) { return; }
 
-			var base = result.PhotoUriBase;
 			var photos = [];
 
 			for(var i=0; i < result.PhotoCount; i++) {
-				photos[i] = base + i+'-medium.jpg';
+				photos[i] = result.PhotoUriBase + i+'-medium.jpg';
 			}
 
 			// Replace the title to hide the tooltip
-			$('.listing-'+result.MlsNumber+' .dsidx-photo img').hover(function() {
-				$(this).attr('_t', $(this).attr('title')).attr('title', null);
-			}, function() {
-				$(this).attr('title', $(this).attr('_t')).attr('_t', null);
-			}
-			).off('iskip').iskip({
-				images: photos,
-				method:'mousemove'
-			});
+			$('#dsidx-listings li.dsidx-listing')
+			.eq(index)
+			.find('.dsidx-photo img')
+				.addClass('iskip')
+				.hover(function() {
+					$(this).attr('_t', $(this).attr('title')).attr('title', null);
+				}, function() {
+					$(this).attr('title', $(this).attr('_t')).attr('_t', null);
+				}
+				).off('iskip').iskip({
+					images: photos,
+					method:'mousemove'
+				});
 		});
 	}
 });
