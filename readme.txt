@@ -14,6 +14,8 @@ dsIDXpress user: add a great feature: scroll through all of a listing's photos i
 
 [dsIDXpress](http://wordpress.org/plugins/dsidxpress/) is the best WordPress IDX plugin. Wouldn't it be great if you could do more?
 
+#### Works with dsIDXpress Lite & dsIDXpress Pro
+
 iSkip for dsIDXpress allows you to scroll through all of a listing's photos by simply hovering over the image on the search results page. __View the video below__ to see what a great feature this is.
 
 [youtube http://www.youtube.com/watch?v=-wJ-zso8ofM]
