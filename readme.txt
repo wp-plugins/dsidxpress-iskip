@@ -3,7 +3,7 @@ Contributors: katzwebservices, katzwebdesign
 Donate link: http://www.idxplus.net
 Tags: real estate, realestate, real-estate, houses, realtor, idx, idxpress, dsidxpress, diverse solutions, idx press plus, idx plus
 Requires at least: 3.3
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,11 @@ Yes, this works for both dsIDXpress Lite and dsIDXpress Pro.
 
 == Changelog ==
 
+= 1.2.1 (June 5, 2014) =
+* Fixed: Compatibility with Pro
+* Improved: Now the image heights are the same when hovering over vertical images
+* Fixed: No longer run iSkip on listings with only one photo
+
 = 1.2 (on May 1, 2014) =
 * Added support for dsIDXpress Pro
 * Confirmed WordPress 3.9 support
@@ -55,6 +60,11 @@ Yes, this works for both dsIDXpress Lite and dsIDXpress Pro.
 * Liftoff!
 
 == Upgrade Notice ==
+
+= 1.2.1 (June 5, 2014) =
+* Fixed: Compatibility with Pro
+* Improved: Now the image heights are the same when hovering over vertical images
+* Fixed: No longer run iSkip on listings with only one photo
 
 = 1.2 (on May 1, 2014) =
 * Added support for dsIDXpress Pro

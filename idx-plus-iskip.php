@@ -2,7 +2,7 @@
 /*
 * Plugin Name: IDX+ iSkip
 * Description: Enable iPhoto-like slideshow when hovering over your dsIDXpress listing photo
-* Version: 1.2
+* Version: 1.2.1
 * Author: Katz Web Services, Inc.
 * Author URI: http://www.idxplus.net
 * Text Domain: idx-plus
@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 		dsidx.dataSets['results'].forEach(function(result, index, results) {
 
 			// There are no photos
-			if(result.PhotoCount <= 0) { return; }
+			if(result.PhotoCount <= 1) { return; }
 
 			var photos = [];
 
@@ -47,13 +47,15 @@ jQuery(document).ready(function($) {
 			}
 
 			// Replace the title to hide the tooltip
-			$('#dsidx-listings li.dsidx-listing')
+			$('#dsidx-listings li[class*="dsidx-listing"]')
 			.eq(index)
 			.find('.dsidx-photo img')
 				.addClass('iskip')
 				.hover(function() {
+					$(this).height($(this).parents('.dsidx-photo').height());
 					$(this).attr('_t', $(this).attr('title')).attr('title', null);
 				}, function() {
+					$(this).height(null);
 					$(this).attr('title', $(this).attr('_t')).attr('_t', null);
 				}
 				).off('iskip').iskip({
