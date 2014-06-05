@@ -51,8 +51,9 @@ jQuery(document).ready(function($) {
 			.eq(index)
 			.find('.dsidx-photo img')
 				.addClass('iskip')
+				.attr('data-height', $(this).parents('.dsidx-photo').height() )
 				.hover(function() {
-					$(this).height($(this).parents('.dsidx-photo').height());
+					$(this).height( $(this).attr('data-height') );
 					$(this).attr('_t', $(this).attr('title')).attr('title', null);
 				}, function() {
 					$(this).height(null);
