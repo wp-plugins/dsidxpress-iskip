@@ -1,9 +1,9 @@
 === iSkip for dsIDXpress by IDX+ ===
-Contributors: katzwebservices, katzwebdesign
+Contributors: talegasystems
 Donate link: http://www.idxplus.net
 Tags: real estate, realestate, real-estate, houses, realtor, idx, idxpress, dsidxpress, diverse solutions, idx press plus, idx plus
 Requires at least: 3.3
-Tested up to: 3.9.1
+Tested up to: 4.2.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
